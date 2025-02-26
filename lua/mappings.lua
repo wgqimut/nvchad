@@ -5,6 +5,7 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local autocmd = vim.api.nvim_create_autocmd
 
+map("n", "<C-I>", "<C-I>", { noremap = true })
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<leader>sg", require('telescope.builtin').live_grep, {desc = '[S]earch [G]rep'})

@@ -4,6 +4,12 @@ local o = vim.o
 o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 o.cursorline = true
 
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.tabstop = 4
+vim.opt.expandtab = true -- disable tab, always use space
+vim.opt.inccommand = 'split'
+
 vim.opt.clipboard = 'unnamedplus'
 local function my_paste()
   return {
