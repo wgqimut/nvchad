@@ -4,6 +4,15 @@ local o = vim.o
 o.sessionoptions = 'blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions'
 o.cursorline = true
 
+vim.opt.showmode = false
+vim.opt.breakindent = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.opt.signcolumn = 'yes'
+
+vim.opt.updatetime = 250
+
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.tabstop = 4
